@@ -19,5 +19,6 @@ public class Main {
         buses[1] = new Bus("ЛиАЗ", "677", 6.96);
         buses[2] = new Bus("ЛАЗ", "695Н", 6.0);
         buses[3] = new Bus("VolgaBus", "Серпантин-10", 8.4);
+
     }
 }

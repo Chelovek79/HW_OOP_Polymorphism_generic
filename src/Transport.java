@@ -5,7 +5,7 @@ public abstract class Transport {
 
     public Transport(String brand, String model) {
         this.brand = Check.checkingString(brand,"Самоделка");
-        this.model = Check.checkingString(model," 1-ая ");
+        this.model = Check.checkingString(model,"1");
     }
 
     public String getBrand() {
