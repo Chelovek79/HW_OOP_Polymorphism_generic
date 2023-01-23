@@ -20,5 +20,36 @@ public class Main {
         buses[2] = new Bus("ЛАЗ", "695Н", 6.0);
         buses[3] = new Bus("VolgaBus", "Серпантин-10", 8.4);
 
+        printAllparticipant(smallcar);
+        printAllparticipant(trucks);
+        printAllparticipant(buses);
+
+        System.out.print(smallcar[0].getBrand() + " " + smallcar[0].getModel() + ". ");
+        smallcar[2].bestTimeLap();
+
+        System.out.print(trucks[1].getBrand() + " " + trucks[1].getModel() + ". ");
+        trucks[1].pit_stop();
+
+        System.out.print(buses[1].getBrand() + " " + buses[1].getModel() + ". ");
+        buses[3].maxSpeed();
+    }
+
+    public static void printAllparticipant(PassengerCar[] smallcar) {
+        for (PassengerCar passengerCar : smallcar) {
+            System.out.println(passengerCar);
+        }
+        System.out.println("");
+    }
+    public static void printAllparticipant(Trucks[] trucks) {
+        for (Trucks truck : trucks) {
+            System.out.println(truck);
+        }
+        System.out.println("");
+    }
+    public static void printAllparticipant(Bus[] buses) {
+        for (Bus bus : buses) {
+            System.out.println(bus);
+        }
+        System.out.println("");
     }
 }
