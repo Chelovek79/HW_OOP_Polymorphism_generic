@@ -1,4 +1,8 @@
-public abstract class Transport {
+package Transport;
+
+import Check.Check;
+
+public class Transport {
 
     private final String brand;
     private final String model;
@@ -6,6 +10,11 @@ public abstract class Transport {
     public Transport(String brand, String model) {
         this.brand = Check.checkingString(brand,"Самоделка");
         this.model = Check.checkingString(model,"1");
+    }
+
+    public Transport () {
+        brand = null;
+        model = null;
     }
 
     public String getBrand() {

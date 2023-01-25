@@ -1,3 +1,5 @@
+package Check;
+
 public class Check {
 
     public static String checkingString(String value, String otherValue) {
