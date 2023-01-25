@@ -3,7 +3,7 @@ package Transport;
 import Check.Check;
 import Drivers.Driver_D;
 
-public class Bus<T extends Driver_D> extends Transport implements Competing {
+public class Bus <T extends Driver_D> extends Transport implements Competing {
 
     private double engineVolume;
     private T driver;

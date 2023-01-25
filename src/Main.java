@@ -12,7 +12,7 @@ public class Main {
 
         Driver drivers = new Driver_B();
         Transport sporttrasport = new Transport();
-        Competing competing = new PassengerCar<>();
+        Competing competing = new PassengerCar <> ();
 
         transport.getDriverCarNameB(1);
         drivers.startDriving();
@@ -24,9 +24,5 @@ public class Main {
         drivers.stopDriving();
         System.out.println("Финиш");
 
-
-
     }
-
-
 }

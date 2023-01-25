@@ -6,17 +6,17 @@ public class DB_Transport {
 
     DB_Drivers dbDrivers = new DB_Drivers();
 
-    PassengerCar [] smallcar = {new PassengerCar<> ("Toyota", "Chaser", 3.0, dbDrivers.getDriverB(0)),
+    PassengerCar <?> [] smallcar = {new PassengerCar<> ("Toyota", "Chaser", 3.0, dbDrivers.getDriverB(0)),
             new PassengerCar<>("BMW", "750iL", 5.4, dbDrivers.getDriverB(2)),
             new PassengerCar<>(" ", "Калина",1.5, dbDrivers.getDriverB(1)),
             new PassengerCar<>("ЗАЗ", "1.2 MT 968M", 1.2,dbDrivers.getDriverB(0)) };
 
-    Trucks[] trucks = {new Trucks<>("КамАЗ", "43118", 10.85, dbDrivers.getDriverC(1)),
+    Trucks <?> [] trucks = {new Trucks<>("КамАЗ", "43118", 10.85, dbDrivers.getDriverC(1)),
             new Trucks<>("ЗИЛ", "131", 6.96, dbDrivers.getDriverC(0)),
             new Trucks<>("Урал", null, 6.6, dbDrivers.getDriverC(2)),
             new Trucks<>("ГАЗ", "66", 0, dbDrivers.getDriverC(1)) };
 
-    Bus[] buses = {new Bus<>("Ikarus", "250 SL", 10.4, dbDrivers.getDriverD(1)),
+    Bus <?> [] buses = {new Bus<>("Ikarus", "250 SL", 10.4, dbDrivers.getDriverD(1)),
             new Bus<>("ЛиАЗ", "677", 6.96, dbDrivers.getDriverD(0)),
             new Bus<>("ЛАЗ", "695Н", 6.0, dbDrivers.getDriverD(2)),
             new Bus<>("VolgaBus", "Серпантин-10", 8.4, dbDrivers.getDriverD(2)) };
